@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="w-full h-screen flex justify-center items-center bg-slate-300">
+        <div class="w-11/12 sm:w-8/12 md:6/12 lg:w-4/12 xl:w-3/12  bg-white rounded-[15px] p-5">
+            <header class="p-1">
+                <h3 class="text-2xl font-bold text-center">Thông tin sinh viên</h3>
+            </header>
+            <hr class="m-5">
+            <form class="flex flex-col justify-start gap-4" action="">
+                <div>
+                    <label class="font-bold" for="ten">Tên:</label><br>
+                    <input class="w-full bg-gray-100     rounded-md p-1" type="text" id="ten" name="ten"><br>
+                </div>
+                <div>       
+                    <label class="font-bold" for="mssv">MSSV:</label><br>   
+                    <input class="w-full bg-gray-100 rounded-md p-1" type="text" id="mssv" name="mssv"><br>
+                </div>
+                <div>       
+                    <label class="font-bold" for="email">Email:</label><br>   
+                    <input class="w-full bg-gray-100 rounded-md p-1" type="text" id="email" name="email"><br>
+                </div>
+                <div>
+                    <label class="font-bold" for="khoa">Khoa:</label>
+                    <select name="khoa" id="khoa">
+                        <option value="CNTT" selected>CNTT</option>
+                        <option value="Fast">Fast</option>
+                        <option value="Cơ khí">Cơ khí</option>
+                        <option value="Cơ khí giao thông">Cơ khí giao thông</option>
+                        <option value="Hóa">Hóa</option>
+                        <option value="Môi trường">Môi trường</option>
+                        <option value="Kiến trúc">Kiến trúc</option>
+                        <option value="Xây dựng">Xây dựng</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="font-bold" for="gioitinh">Giới tính:</label>
+                    <select name="gioitinh" id="gioitinh">
+                        <option value="Nam" selected>Nam</option>
+                        <option value="Nữ">Nữ</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="font-bold" for="ngaysinh">Ngày sinh:</label>
+                    <input type="date" id="ngaysinh" name="ngaysinh">
+                </div>       
+                <div class="flex flex-col justify-center items-center p-1">
+                    <button class="w-[110.50px] h-[35px] px-2 rounded-xl bg-teal-300 text-white  hover:bg-teal-200 active:bg-teal-400" type="button" onclick="handleSubmit()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
